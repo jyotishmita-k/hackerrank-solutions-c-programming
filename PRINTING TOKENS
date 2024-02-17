@@ -1,0 +1,30 @@
+PRINTING TOKENS
+
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    char inputString[1000];
+    scanf("%[^\n]",inputString);
+    int i=0;
+    while(inputString[i]!='\0'){
+        while(inputString[i]==' '){
+            i++;
+        }
+        while (inputString[i]!=' ' && inputString[i]!='\0'){
+            printf("%c",inputString[i]);
+            i++;
+        }
+        if(inputString[i]!='\0'){
+            printf("\n");
+            i++;
+        
+        }
+    }
+   
+    return 0;
+}
